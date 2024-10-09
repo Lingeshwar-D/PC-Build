@@ -3,9 +3,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://kit.fontawesome.com/a27abc4f19.js" crossorigin="anonymous"></script>
+    <title>PC Builder</title>
+    <script>
+    function openmenu(){
+        if (document.getElementById("menu").style.display === "none") {
+           document.getElementById("menu").style.display = "flex";
+        } else {
+           document.getElementById("menu").style.display = "none";
+        }
+    }
+
+    </script>
 </head>
 <body>
+    <!-- <div class="">
+        <a href="https://api.whatsapp.com/send?phone=8610289287" target="_blank" ><img src="img/whatsapp.png" alt="whatsapp" ></a>
+        <a href=""><img src="img/insta.png" alt=""></a>
+        <a href=""><img src="img/fb.png" alt=" "  width="30px" height="30px"></a>
+    </div> -->
+   
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/logo-bg.png" alt="pc logo">
+            </div>
+            <ul class="meu" id="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pcbuild">Bulid PC</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu" >
+                <button onclick="openmenu()"><i class="fa-solid fa-bars" style="color: #000000;"></i></button>
+            </div>
+            <div class="serch">
+                <button><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="cont">
+            <h1>Build Your Dream <span>PC</span> with <span>Ease</span></h1>
+            <p>Build a custom PC that suits your needs and budget, whether you're a gamer, creator, or professional.<br>Choose top components and bring your build to life!</p>
+            <a href="#pc-build" class="blt">Build Now</a>
+            
+           
+           
+        </div>
+        <div class="video">
+            <video autoplay loop width="500px" height="500px">
+                <source src="img/PC (1).mp4">
+            </video>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="demopc">
+            <video autoplay loop width="500px" height="500px">
+                <source src="img/demopc2.mp4">
+            </video>
+        </div>
+        <div class="abt">
+            <h2>PC Builder</h2>
+            <p>At PC Builder, we empower you to create your dream PC. Our team of tech enthusiasts simplifies the building process with tools and expert advice.</p>
     
+            <p>Whether you're a gamer or a creator, we provide resources to help you make informed decisions and build a PC that fits your needs.</p>
+            
+            <p>Join our community and let's build something amazing together!</p>
+        </div>
+    </section>
+   
+    <section id="services">
+        <div class="heading">
+            <div class="border"></div><div class="tit">Explore Our Services</div><div class="border"></div>
+        </div>
+        <div class="card">
+            <div class="cd1">
+                <div class="title">Custom PC Builds</div>
+                <img src="img/cutompc.png"  class="img" alt="">
+                <div class="info">Design and build your own custom PC with the best components tailored to your needs.
+                </div>
+                <ul class="components-list">
+                    <li><strong>Processors:</strong> AMD Ryzen, Intel Core</li>
+                    <li><strong>Graphics:</strong> NVIDIA GeForce, AMD Radeon</li>
+                    <li><strong>Storage:</strong> Samsung, Western Digital</li>
+                    <li><strong>Memory:</strong> Corsair, G.SKILL</li>
+                </ul>
+            </div>
+
+            <div class="cd2">
+                <div class="title t2">Pre-Built Options</div>
+                <img src="img/prepc.png" alt="">
+                <div class="info">Pick from our range of pre-built PCs featuring top-tier components from trusted brands.
+                </div>
+                <ul class="components-list">
+                    <li><strong>Gaming:</strong> Intel Core i7, AMD Radeon, Corsair RAM</li>
+                    <li><strong>Content Creation:</strong> AMD Ryzen 7, NVIDIA RTX, Samsung SSDs</li>
+                    <li><strong>Budget Builds:</strong> Intel Core i5, RX series </li>
+                </ul>
+            </div>
+
+            <div class="cd3">
+                <div class="title t3">Expert Consultation</div>
+                <img src="img/cons-removebg-preview.png" class="img img3" alt="">
+                <div class="info">Get tailored advice on the best components from leading brands based on your needs and budget.
+                </div>
+                <ul class="components-list">
+                    <li><strong>Gaming Builds:</strong> AMD Ryzen 9, Intel Core i9, NVIDIA GeForce RTX</li>
+                    <li><strong>Workstation Builds:</strong> Intel Xeon, AMD Threadripper</li>
+                    <li><strong>Storage Solutions:</strong> Seagate, Crucial</li>
+                </ul>
+            </div>
+
+        </div> 
+    </section>
+
+    <div class="heading">
+        <div class="border"></div><div class="tit">Customize Your PC Build</div><div class="border"></div>
+    </div>
+    <section id="pcbuild">
+       
+        <div class="container">
+
+            <div class="itm itm1">
+                <div class="detail">
+                    <div class="compname">Select Processor</div>
+                    <div class="content">
+                        <p>Choose your processor from leading brands like Intel or AMD to build the perfect custom PC that meets your performance needs.</p>
+                    </div>
+                    <div class="btn">
+                        <button>Select &nbsp; &nbsp;<i class="fa-solid fa-arrow-pointer" style="color: #f7f9fc;"></i></button>
+                    </div>
+                </div>    
+                <div class="compimg">
+                    <img src="img/cpu.png" alt="">
+                </div>
+            </div>
+
+            <div class="itm itm2">
+                <div class="detail">
+                    <div class="compname compname2">Select Motherboard</div>
+                    <div class="content">
+                        <p>Select the perfect motherboard from top brands like ASUS or MSI to ensure optimal compatibility and performance for your custom PC build.</p>
+                    </div>
+                    <div class="btn btn2">
+                        <button>Select &nbsp; &nbsp;<i class="fa-solid fa-arrow-pointer" style="color: #f7f9fc;"></i></button>
+                    </div>
+                </div>    
+                <div class="compimg">
+                    <img src="img/motherbord.png" alt="">
+                </div>
+            </div>
+
+            <div class="itm itm3">
+                <div class="detail">
+                    <div class="compname compname3">Select GPU</div>
+                    <div class="content">
+                        <p>Pick the ideal GPU from trusted brands like NVIDIA or AMD to power your custom PC with high-performance graphics for gaming, design, or AI tasks.</p>
+                    </div>
+                    <div class="btn btn3">
+                        <button>Select &nbsp; &nbsp;<i class="fa-solid fa-arrow-pointer" style="color: #f7f9fc;"></i></button>
+                    </div>
+                </div>    
+                <div class="compimg">
+                    <img src="img/gpu.png" alt="">
+                </div>
+            </div>
+
+            <div class="itm itm4">
+                <div class="detail">
+                    <div class="compname compname4">Select Storage</div>
+                    <div class="content">
+                        <p>Select a reliable hard drive or SSD from trusted brands like Seagate or Samsung to store your data and enhance your custom PC's performance.</p>
+                    </div>
+                    <div class="btn btn4">
+                        <button>Select &nbsp; &nbsp;<i class="fa-solid fa-arrow-pointer" style="color: #f7f9fc;"></i></button>
+                    </div>
+                </div>    
+                <div class="compimg">
+                    <img src="img/hd.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="contact">
+        <div class="prenav">
+                <button><a href="#home">Home &uarr;</a></a></button>
+                <button><a href="#about">About Us &uarr;</a></button>
+                <button><a href="#services">Services &uarr;</a></button>
+                <button><a href="#pcbuild">Bulid PC &uarr;</a></button>
+                <button><a href="#contact">Contact &uarr;</a></button>
+        </div>
+        <div class="continfo">
+            <div class="loc">
+                <div class="t">Address</div>
+                <div class="br"><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i> 123 Tech Avenue, Suite 456</div>
+                <div class="t">Online</div>
+                <div class="on">
+                    <div class="ph"><i class="fa-solid fa-mobile-screen" style="color: #ffffff;"></i>  +1234445566</div><br>
+
+                    <div class="email"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i> info@sample.com</div>
+                </div>
+            </div>
+
+            <div class="map">
+                <div class="map">On a Map</div>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434997844!2d-122.07825318468194!3d37.386051179829506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb66be1237d07%3A0x9a3b7a32e0120dc!2sGoogleplex!5e0!3m2!1sen!2sus!4v1616700748832!5m2!1sen!2sus" 
+                    loading="lazy" width="70%" height="80%">   
+                </iframe>
+            </div>
+        </div>
+    </footer>
+  
+    
+   
+   
 </body>
 </html>
